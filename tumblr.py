@@ -38,10 +38,7 @@ class TumblrDL:
             if os.path.exists(self.status_file):
                 with open(self.status_file, 'r+b') as status_file:
                     self.status = pickle.load(status_file)
-        # self.img_links = []
-        # self.posts_count = None
-        # self.cur_post_number = 1
-        # self.last_id = last_id
+
 
     def build_url(self):
         query = {'api_key':API_KEY, 'limit':5}
